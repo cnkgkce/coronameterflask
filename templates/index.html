@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet">  
+   
+<title>Covid-19 Live  Data</title>
+ 
+
+  <title>Home</title>
+  
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+  <a href="/" class="active">Global</a>
+  <a href="/"> Countries</a>
+  <a href="/">About Us</a>
+  <a href="/">Contact Us</a>
+           
+</div>
+
+    <div class="banner">
+        <h1>Coronavirus Global Stats</h1>
+
+    </div>
+
+    <br>
+    
+   <br>
+    <div class="leftpane">
+
+      <h4>New Deaths </h4>
+<h4>
+  {{nd_n}}
+</h4><br>
+         <h4>New Cases </h4>
+<h4>
+  {{nc_n}}
+</h4><br>
+        <h4>New Recovered </h4>
+<h4> {{nr_n}} </h4>
+                 <br>
+    <div class="banner2">
+
+</div>
+</div>
+    
+    <div class="rightpane">
+        <h4>Total Deaths </h4>
+<h4>
+  {{td_n}}
+</h4><br>
+         <h4>Total Cases </h4>
+<h4>
+  {{tc_n}}
+</h4><br>
+         <h4>Total Reecoverd </h4>
+<h4>
+  {{tr_n}}
+
+</h4><br>
+<div class="banner2">
+
+</div>
+</div>
+<div>
+  <h3 style="background-color:lightblue">Updated On: {{date}} </h3> 
+</div>
+    
+
+</body>
+</html>
